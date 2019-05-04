@@ -1,0 +1,170 @@
+﻿
+*{
+    box-sizing: border-box;
+}
+
+h1{
+    
+	text-shadow: 3.5px 3.5px 3.5px black;
+}
+header{
+	width:100%;
+	top:0%;
+	padding:10px;
+	height:auto;
+	background-color:rgb(209, 144, 78);
+	box-shadow:3px 3px #555;
+    opacity:0.8;
+    text-align:center;
+}
+body{
+    background:url("media/paperBackground.jpg");
+    background-repeat: repeat;
+    font-family: cursive, Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0%;
+    min-height: 600px;
+    border: groove saddlebrown 20px;
+    background-color: tan;
+}
+fieldset{
+    border: black 2px;
+}
+nav{
+    margin-top: 5%;
+    clear:both;
+    float:left;  
+}
+section{
+    display: inline-flex;
+}
+h1{
+    color: beige;
+}
+aside{
+    margin: 25%;
+    font-size: 20px;
+    flex: left;
+}
+
+[class*="col-"]{
+    width: 100%; /*overiden in tablet and desktop*/
+    float: left;
+    padding: 15px;   /*defaults for everything*/
+}
+nav ul{
+	background: linear-gradient(90deg,  tan, white,saddlebrown);
+	box-shadow: 6px 6px 6px rgba(0,0,0,0.5);
+	padding: 0 20px;
+	border-radius: 10px;
+	list-style: none;
+	display: inline-table;
+	color: black;
+    width: auto;   
+    
+}
+nav ul li{
+	display: inline-table;
+}
+nav ul li:hover{
+    background: radial-gradient(saddlebrown, white);
+    color: tan;
+}
+nav ul li a{
+	display: block;
+	padding: 10px 10px;
+	color: black;
+	text-decoration: none;
+    border-radius: 10px;
+}
+nav ul li:hover a{
+    background: radial-gradient(saddlebrown, white);
+    color: tan;
+}
+nav ul li:hover >ul{
+	display: flex;
+	flex-direction: column;
+}
+nav ul ul{
+	display: none;
+	background: radial-gradient(white, saddlebrown);
+	border-radius: 0px;
+	padding: 0px;
+	position: absolute;
+    z-index: 10;    
+    width: auto;
+}
+nav ul ul li{
+	display: block;
+	border-top: 1px solid #757575;
+    border-bottom: 1px solid #757575;
+	text-align: left;
+}
+nav ul ul li a{
+	padding: 15px 40px;
+	color: #757575;
+}
+nav ul ul li a:hover {
+    background: radial-gradient(saddlebrown, white);
+    color: tan;
+}
+.header{
+    margin-left: 24%;
+}
+.icon-bar{
+	width: 100%;
+	background-color: cornflowerblue;
+	overflow: auto;
+}
+.icon-bar a{
+	float: left;
+	text-align: center;
+	width: 20%;
+	padding: 12px 0;
+	transition: all 0.3s ease;
+	color: white;
+	font-size: 36px;
+}
+.icon-bar a:hover{
+	background-color: lightcoral;
+}
+
+@media only screen and (min-width: 600px){
+    /* For Tablets*/
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+        body{ 
+            max-width:1200px; 
+            background:url("media/paperBackground.jpg");
+            background-repeat:no-repeat;
+            background-position:center top;
+            background-size:cover;
+            text-align: center;
+        }
+    }
